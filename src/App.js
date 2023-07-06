@@ -8,14 +8,15 @@ function App() {
   const skills = [
     { id: 1, name: "plumbing" },
     { id: 2, name: "wiring" },
-    { id: 3, name: "painting" }
+    { id: 3, name: "painting" },
+    { id: 3, name: "swimming" }
   ]
   const handleDelete = (userId) => {
     alert(userId)
   }
   return (
     <div className="App">
-      {/* <Skills skills={skills} /> */}
+      <Skills skills={skills} />
       {/* <Counter /> */}
       <Users handleDelete={handleDelete} />
     </div>
